@@ -195,6 +195,12 @@
     <ClCompile Include="banks\bank16.c">
       <Filter>Source Files\banks</Filter>
     </ClCompile>
+    <ClCompile Include="engine\riff_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\sample_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -340,6 +346,12 @@
     </ClInclude>
     <ClInclude Include="banks\bank16.h">
       <Filter>Header Files\banks</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\riff_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\sample_manager.h">
+      <Filter>Header Files\engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

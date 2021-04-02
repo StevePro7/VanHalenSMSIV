@@ -165,6 +165,8 @@
     <ClCompile Include="engine\audio_manager.c" />
     <ClCompile Include="engine\content_manager.c" />
     <ClCompile Include="engine\cursor_manager.c" />
+    <ClCompile Include="engine\riff_manager.c" />
+    <ClCompile Include="engine\sample_manager.c" />
     <ClCompile Include="engine\scroll_manager.c" />
     <ClCompile Include="engine\timer_manager.c" />
     <ClCompile Include="engine\enum_manager.c" />
@@ -215,6 +217,8 @@
     <ClInclude Include="engine\audio_manager.h" />
     <ClInclude Include="engine\content_manager.h" />
     <ClInclude Include="engine\cursor_manager.h" />
+    <ClInclude Include="engine\riff_manager.h" />
+    <ClInclude Include="engine\sample_manager.h" />
     <ClInclude Include="engine\scroll_manager.h" />
     <ClInclude Include="engine\timer_manager.h" />
     <ClInclude Include="engine\enum_manager.h" />
