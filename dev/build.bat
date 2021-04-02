@@ -50,6 +50,7 @@ sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 t
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 scroll_screen.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 select_screen.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 record_screen.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 test_screen.c
 cd ..
 
 
@@ -92,7 +93,7 @@ engine\enum_manager.rel engine\font_manager.rel engine\input_manager.rel engine\
 engine\screen_manager.rel engine\scroll_manager.rel engine\storage_manager.rel engine\timer_manager.rel ^
 object\cursor_object.rel object\record_object.rel object\scroll_object.rel object\storage_object.rel object\timer_object.rel ^
 screen\none_screen.rel screen\splash_screen.rel screen\title_screen.rel screen\scroll_screen.rel ^
-screen\select_screen.rel screen\record_screen.rel ^
+screen\select_screen.rel screen\record_screen.rel screen\test_screen.rel ^
 gfx.rel ^
 psg.rel
 
