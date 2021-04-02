@@ -151,6 +151,7 @@
     <ClCompile Include="banks\bank14.c" />
     <ClCompile Include="banks\bank15.c" />
     <ClCompile Include="banks\bank16.c" />
+    <ClCompile Include="banks\bank17.c" />
     <ClCompile Include="banks\bank2.c" />
     <ClCompile Include="banks\bank3.c" />
     <ClCompile Include="banks\bank4.c" />
@@ -203,6 +204,7 @@
     <ClInclude Include="banks\bank14.h" />
     <ClInclude Include="banks\bank15.h" />
     <ClInclude Include="banks\bank16.h" />
+    <ClInclude Include="banks\bank17.h" />
     <ClInclude Include="banks\bank2.h" />
     <ClInclude Include="banks\bank3.h" />
     <ClInclude Include="banks\bank4.h" />
