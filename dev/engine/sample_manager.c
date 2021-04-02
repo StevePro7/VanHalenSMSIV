@@ -12,7 +12,7 @@ void engine_sample_manager_play( const void *sample )
 
 #else
 
-void engine_sample_manager_init( const void *psginit )
+void engine_sample_manager_init( const void *psginit ) __naked __z88dk_fastcall
 {
 	( void ) psginit;
 
@@ -29,7 +29,7 @@ void engine_sample_manager_init( const void *psginit )
 		__endasm;
 }
 
-void engine_sample_manager_play( const void *sample )
+void engine_sample_manager_play( const void *sample )  __naked __z88dk_fastcall
 {
 	( void ) sample;
 
