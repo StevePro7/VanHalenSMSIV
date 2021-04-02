@@ -150,6 +150,7 @@
     <ClCompile Include="banks\bank13.c" />
     <ClCompile Include="banks\bank14.c" />
     <ClCompile Include="banks\bank15.c" />
+    <ClCompile Include="banks\bank16.c" />
     <ClCompile Include="banks\bank2.c" />
     <ClCompile Include="banks\bank3.c" />
     <ClCompile Include="banks\bank4.c" />

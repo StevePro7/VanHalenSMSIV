@@ -106,37 +106,25 @@ ihx2sms output.ihx output.sms
 
 REM https://www.askingbox.com/question/batch-script-delete-file-if-it-exists
 cd devkit
-if exist "*.asm" del "*.asm" > nul
-if exist "*.lst" del "*.lst" > nul
-if exist "*.sym" del "*.sym" > nul
+if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
 cd ..
 
 cd engine
-if exist "*.asm" del "*.asm" > nul
-if exist "*.lst" del "*.lst" > nul
-if exist "*.sym" del "*.sym" > nul
+if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
 cd ..
 
 cd object
-if exist "*.asm" del "*.asm" > nul
-if exist "*.lst" del "*.lst" > nul
-if exist "*.sym" del "*.sym" > nul
+if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
 cd ..
 
 cd screen
-if exist "*.asm" del "*.asm" > nul
-if exist "*.lst" del "*.lst" > nul
-if exist "*.sym" del "*.sym" > nul
+if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
 cd ..
 
-if exist "*.asm" del "*.asm" > nul
-if exist "*.ihx" del "*.ihx" > nul
-if exist "*.lk"  del "*.lk"  > nul
-if exist "*.lst" del "*.lst" > nul
+if exist "*.asm" del "*.asm" > nul; if exist "*.ihx" del "*.ihx" > nul; if exist "*.lk"  del "*.lk"  > nul
+if exist "*.lst" del "*.lst" > nul; if exist "*.noi" del "*.noi" > nul; if exist "*.sym" del "*.sym" > nul
 ::if exist "*.map" del "*.map" > nul
-if exist "*.noi" del "*.noi" > nul
-REM if exist "*.rel" del "*.rel" > nul
-if exist "*.sym" del "*.sym" > nul
+::if exist "*.rel" del "*.rel" > nul
 
 
 C:\SEGA\Fusion\fusion.exe output.sms

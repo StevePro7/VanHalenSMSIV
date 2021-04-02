@@ -192,6 +192,9 @@
     <ClCompile Include="object\riff_object.c">
       <Filter>Source Files\object</Filter>
     </ClCompile>
+    <ClCompile Include="banks\bank16.c">
+      <Filter>Source Files\banks</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
