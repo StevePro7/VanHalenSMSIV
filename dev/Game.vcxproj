@@ -179,6 +179,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="object\cursor_object.c" />
     <ClCompile Include="object\record_object.c" />
+    <ClCompile Include="object\riff_object.c" />
     <ClCompile Include="object\scroll_object.c" />
     <ClCompile Include="object\storage_object.c" />
     <ClCompile Include="object\timer_object.c" />
@@ -198,6 +199,7 @@
     <ClInclude Include="banks\bank13.h" />
     <ClInclude Include="banks\bank14.h" />
     <ClInclude Include="banks\bank15.h" />
+    <ClInclude Include="banks\bank16.h" />
     <ClInclude Include="banks\bank2.h" />
     <ClInclude Include="banks\bank3.h" />
     <ClInclude Include="banks\bank4.h" />
@@ -227,6 +229,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="object\cursor_object.h" />
     <ClInclude Include="object\record_object.h" />
+    <ClInclude Include="object\riff_object.h" />
     <ClInclude Include="object\scroll_object.h" />
     <ClInclude Include="object\storage_object.h" />
     <ClInclude Include="object\timer_object.h" />

@@ -11,8 +11,8 @@ A _HOME size 0 flags 0 addr 0
 A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _BANK16 size 3ACE flags 0 addr 0
-S G$RunningDevil_wav_pcmenc$0$0 Def0000
-S _RunningDevil_wav_pcmenc Def0000
+S G$RunningWithTheDevil_wav_pcmenc$0$0 Def0000
+S _RunningWithTheDevil_wav_pcmenc Def0000
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00

@@ -189,6 +189,9 @@
     <ClCompile Include="screen\test_screen.c">
       <Filter>Source Files\screen</Filter>
     </ClCompile>
+    <ClCompile Include="object\riff_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -328,6 +331,12 @@
     </ClInclude>
     <ClInclude Include="screen\test_screen.h">
       <Filter>Header Files\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="object\riff_object.h">
+      <Filter>Header Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="banks\bank16.h">
+      <Filter>Header Files\banks</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
