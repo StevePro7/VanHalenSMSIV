@@ -1,4 +1,6 @@
 #include "riff_manager.h"
+#include "sample_manager.h"
+#include "..\devkit\_sms_manager.h"
 
 const unsigned char psgInit[] =
 {
@@ -7,8 +9,17 @@ const unsigned char psgInit[] =
 
 void engine_riff_manager_init()
 {
+	engine_sample_manager_init( psgInit );
 }
 
 void engine_riff_manager_play( unsigned char index )
 {
+	const unsigned char *data;
+	unsigned char bank;
+
+	data = riff_sample_data[ index ];
+	bank = riff_sample_bank[ index ];
+
+	devkit_SMS_mapROMBank( bank );
+	engine_sample_manager_play( data );
 }
