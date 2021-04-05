@@ -1,2 +1,2 @@
 M:bank32
-S:G$bank32_txt$0$0({6}DA6d,SC:U),D,0,0
+S:G$Riff_1982_01_wav_pcmenc$0$0({15424}DA15424d,SC:U),D,0,0

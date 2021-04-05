@@ -1,2 +1,2 @@
 M:bank23
-S:G$bank23_txt$0$0({6}DA6d,SC:U),D,0,0
+S:G$Riff_1979_04_wav_pcmenc$0$0({9284}DA9284d,SC:U),D,0,0

@@ -1,4 +1,4 @@
-extern const unsigned char	bank44_txt[];
-#define				bank44_txt_size 6
-#define				bank44_txt_bank 44
+extern const unsigned char	Riff_1988_01_wav_pcmenc[];
+#define				Riff_1988_01_wav_pcmenc_size 14650
+#define				Riff_1988_01_wav_pcmenc_bank 44
 
