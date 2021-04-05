@@ -1,15 +1,23 @@
 #include "riff_object.h"
-#include "..\banks\bank16.h"
-#include "..\banks\bank17.h"
+//#include "..\banks\bank16.h"
+//#include "..\banks\bank17.h"
+#include "..\banks\bank59.h"
+#include "..\banks\bank60.h"
+#include "..\banks\bank61.h"
+#include "..\banks\bank62.h"
 
 const unsigned char *riff_sample_data[] =
 {
-	RunningWithTheDevil_wav_pcmenc,
-	SomebodyGetMeADoctor_wav_pcmenc
+	Riff_2012_01_wav_pcmenc,
+	Riff_2012_02_wav_pcmenc,
+	Riff_2012_03_wav_pcmenc,
+	Riff_2012_04_wav_pcmenc,
 };
 
 const unsigned char riff_sample_bank[] =
 {
-	RunningWithTheDevil_wav_pcmenc_bank,
-	SomebodyGetMeADoctor_wav_pcmenc_bank,
+	Riff_2012_01_wav_pcmenc_bank,
+	Riff_2012_02_wav_pcmenc_bank,
+	Riff_2012_03_wav_pcmenc_bank,
+	Riff_2012_04_wav_pcmenc_bank,
 };

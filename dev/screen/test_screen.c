@@ -25,6 +25,7 @@ void screen_test_screen_load()
 	engine_riff_manager_init();
 
 	load_record();
+	engine_riff_manager_play( 0 );
 }
 
 void screen_test_screen_update( unsigned char *screen_type )
