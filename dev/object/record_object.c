@@ -10,7 +10,7 @@
 #include "..\banks\bank12.h"
 #include "..\banks\bank13.h"
 #include "..\banks\bank14.h"
-#include "..\banks\bank63.h"
+#include "..\banks\bank15.h"
 
 const unsigned char *record_tiles_data[] =
 {
