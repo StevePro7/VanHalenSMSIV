@@ -126,9 +126,9 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00002508  l__BANK63                       
      00002587  l__BANK3                        
      0000264E  l__BANK13                       
-     00002C92  l__BANK63                       
      00002ED8  l__BANK7                        
      00003021  l__BANK12                       
      00003ACE  l__BANK16                       
@@ -4841,19 +4841,16 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK63                             00008000    00002C92 =       11410. bytes (REL,CON)
+_BANK63                             00008000    00002508 =        9480. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00008000  G$Riff_2012_05_wav_pcmenc$0$0      bank63
-     00008000  _Riff_2012_05_wav_pcmenc           bank63
-     0000878A  G$VanHalen2012__palette__bin$0$0   bank63
-     0000878A  _VanHalen2012__palette__bin        bank63
-     0000879A  G$VanHalen2012__tilemap__stmcomp   bank63
-     0000879A  _VanHalen2012__tilemap__stmcompr   bank63
-     00008804  G$VanHalen2012__tiles__psgcompr$   bank63
-     00008804  _VanHalen2012__tiles__psgcompr     bank63
-
+     00008000  G$VanHalen2012__palette__bin$0$0   bank63
+     00008000  _VanHalen2012__palette__bin        bank63
+     00008010  G$VanHalen2012__tilemap__stmcomp   bank63
+     00008010  _VanHalen2012__tilemap__stmcompr   bank63
+     0000807A  G$VanHalen2012__tiles__psgcompr$   bank63
+     0000807A  _VanHalen2012__tiles__psgcompr     bank63
 ASxxxx Linker V03.00 + NoICE + sdld,  page 140.
 Hexadecimal  [32-Bits]
 

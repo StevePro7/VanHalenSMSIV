@@ -36,7 +36,6 @@ S:G$VanHalen1995__tiles__psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$VanHalen1998__palette__bin$0$0({0}DA0d,SC:U),D,0,0
 S:G$VanHalen1998__tilemap__stmcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$VanHalen1998__tiles__psgcompr$0$0({0}DA0d,SC:U),D,0,0
-S:G$Riff_2012_05_wav_pcmenc$0$0({0}DA0d,SC:U),D,0,0
 S:G$VanHalen2012__palette__bin$0$0({0}DA0d,SC:U),D,0,0
 S:G$VanHalen2012__tilemap__stmcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$VanHalen2012__tiles__psgcompr$0$0({0}DA0d,SC:U),D,0,0
