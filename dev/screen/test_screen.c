@@ -17,7 +17,7 @@ void screen_test_screen_load()
 {
 	// TODO delete
 	struct_record_object *ro = &global_record_object;
-	ro->record_album_index = 11;
+	ro->record_album_index = 10;
 
 	//engine_font_manager_draw_text( "TEST SCREEN...", 10, 5 );
 	
@@ -25,7 +25,7 @@ void screen_test_screen_load()
 	engine_riff_manager_init();
 
 	load_record();
-	engine_riff_manager_play( 0 );
+	//engine_riff_manager_play( 0 );
 }
 
 void screen_test_screen_update( unsigned char *screen_type )
