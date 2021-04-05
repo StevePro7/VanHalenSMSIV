@@ -81,14 +81,27 @@ echo.
 
 REM echo Linking
 sdcc --debug -o output.ihx --Werror --opt-code-speed -mz80 --no-std-crt0 --data-loc 0xC000 ^
--Wl-b_BANK2=0x8000 -Wl-b_BANK3=0x8000 -Wl-b_BANK4=0x8000 -Wl-b_BANK5=0x8000 -Wl-b_BANK6=0x8000 -Wl-b_BANK7=0x8000 -Wl-b_BANK8=0x8000 -Wl-b_BANK9=0x8000 ^
--Wl-b_BANK10=0x8000 -Wl-b_BANK11=0x8000 -Wl-b_BANK12=0x8000 -Wl-b_BANK13=0x8000 -Wl-b_BANK14=0x8000 -Wl-b_BANK15=0x8000 -Wl-b_BANK16=0x8000 -Wl-b_BANK17=0x8000 ^
+-Wl-b_BANK2=0x8000 -Wl-b_BANK3=0x8000 ^
+-Wl-b_BANK4=0x8000 -Wl-b_BANK5=0x8000 -Wl-b_BANK6=0x8000 -Wl-b_BANK7=0x8000 -Wl-b_BANK8=0x8000 -Wl-b_BANK9=0x8000 -Wl-b_BANK10=0x8000 -Wl-b_BANK11=0x8000 ^
+-Wl-b_BANK12=0x8000 -Wl-b_BANK13=0x8000 -Wl-b_BANK14=0x8000 -Wl-b_BANK15=0x8000 -Wl-b_BANK16=0x8000 -Wl-b_BANK17=0x8000 -Wl-b_BANK18=0x8000 -Wl-b_BANK19=0x8000 ^
+-Wl-b_BANK20=0x8000 -Wl-b_BANK21=0x8000 -Wl-b_BANK22=0x8000 -Wl-b_BANK23=0x8000 -Wl-b_BANK24=0x8000 -Wl-b_BANK25=0x8000 -Wl-b_BANK26=0x8000 -Wl-b_BANK27=0x8000 ^
+-Wl-b_BANK28=0x8000 -Wl-b_BANK29=0x8000 -Wl-b_BANK30=0x8000 -Wl-b_BANK31=0x8000 -Wl-b_BANK32=0x8000 -Wl-b_BANK33=0x8000 -Wl-b_BANK34=0x8000 -Wl-b_BANK35=0x8000 ^
+-Wl-b_BANK36=0x8000 -Wl-b_BANK37=0x8000 -Wl-b_BANK38=0x8000 -Wl-b_BANK39=0x8000 -Wl-b_BANK40=0x8000 -Wl-b_BANK41=0x8000 -Wl-b_BANK42=0x8000 -Wl-b_BANK43=0x8000 ^
+-Wl-b_BANK44=0x8000 -Wl-b_BANK45=0x8000 -Wl-b_BANK46=0x8000 -Wl-b_BANK47=0x8000 -Wl-b_BANK48=0x8000 -Wl-b_BANK49=0x8000 -Wl-b_BANK50=0x8000 -Wl-b_BANK51=0x8000 ^
+-Wl-b_BANK52=0x8000 -Wl-b_BANK53=0x8000 -Wl-b_BANK54=0x8000 -Wl-b_BANK55=0x8000 -Wl-b_BANK56=0x8000 -Wl-b_BANK57=0x8000 -Wl-b_BANK58=0x8000 -Wl-b_BANK59=0x8000 ^
+-Wl-b_BANK60=0x8000 -Wl-b_BANK61=0x8000 -Wl-b_BANK62=0x8000 -Wl-b_BANK63=0x8000 ^
 ..\crt0\crt0_sms.rel main.rel ^
 ..\lib\SMSlib.lib ^
 ..\lib\PSGlib.rel ^
-banks\bank2.rel banks\bank3.rel banks\bank4.rel banks\bank5.rel banks\bank6.rel banks\bank7.rel banks\bank8.rel ^
-banks\bank9.rel banks\bank10.rel banks\bank11.rel banks\bank12.rel banks\bank13.rel banks\bank14.rel banks\bank15.rel ^
-banks\bank16.rel banks\bank17.rel ^
+banks\bank2.rel banks\bank3.rel ^
+banks\bank4.rel banks\bank5.rel banks\bank6.rel banks\bank7.rel banks\bank8.rel banks\bank9.rel banks\bank10.rel banks\bank11.rel ^
+banks\bank12.rel banks\bank13.rel banks\bank14.rel banks\bank15.rel banks\bank16.rel banks\bank17.rel banks\bank18.rel banks\bank19.rel ^
+banks\bank20.rel banks\bank21.rel banks\bank22.rel banks\bank23.rel banks\bank24.rel banks\bank25.rel banks\bank26.rel banks\bank27.rel ^
+banks\bank28.rel banks\bank29.rel banks\bank30.rel banks\bank31.rel banks\bank32.rel banks\bank33.rel banks\bank34.rel banks\bank35.rel ^
+banks\bank36.rel banks\bank37.rel banks\bank38.rel banks\bank39.rel banks\bank40.rel banks\bank41.rel banks\bank42.rel banks\bank43.rel ^
+banks\bank44.rel banks\bank45.rel banks\bank46.rel banks\bank47.rel banks\bank48.rel banks\bank49.rel banks\bank50.rel banks\bank51.rel ^
+banks\bank52.rel banks\bank53.rel banks\bank54.rel banks\bank55.rel banks\bank56.rel banks\bank57.rel banks\bank58.rel banks\bank59.rel ^
+banks\bank60.rel banks\bank61.rel banks\bank62.rel banks\bank63.rel ^
 devkit\_sms_manager.rel ^
 devkit\_snd_manager.rel ^
 engine\asm_manager.rel engine\audio_manager.rel ^
@@ -125,8 +138,12 @@ cd screen
 if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
 cd ..
 
-if exist "*.asm" del "*.asm" > nul; if exist "*.ihx" del "*.ihx" > nul; if exist "*.lk"  del "*.lk"  > nul
-if exist "*.lst" del "*.lst" > nul; if exist "*.noi" del "*.noi" > nul; if exist "*.sym" del "*.sym" > nul
+if exist "*.asm" del "*.asm" > nul;
+if exist "*.ihx" del "*.ihx" > nul;
+if exist "*.lk"  del "*.lk"  > nul
+if exist "*.lst" del "*.lst" > nul;
+if exist "*.noi" del "*.noi" > nul;
+if exist "*.sym" del "*.sym" > nul
 ::if exist "*.map" del "*.map" > nul
 ::if exist "*.rel" del "*.rel" > nul
 
