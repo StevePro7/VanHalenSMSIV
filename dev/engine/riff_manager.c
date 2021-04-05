@@ -14,11 +14,12 @@ void engine_riff_manager_init()
 	engine_sample_manager_init( psgInit );
 }
 
-void engine_riff_manager_play( unsigned char index )
+void engine_riff_manager_play( unsigned char album )
 {
 	const unsigned char *data;
 	unsigned char bank;
 	unsigned char loop;
+	unsigned char index = album * MAX_SLICES;
 
 	for( loop = 0; loop < MAX_SLICES; loop++ )
 	{

@@ -10,6 +10,7 @@
 #include "..\engine\scroll_manager.h"
 #include "..\engine\timer_manager.h"
 #include "..\devkit\_sms_manager.h"
+#include "..\devkit\_snd_manager.h"
 
 static void load_record();
 
@@ -17,7 +18,7 @@ void screen_test_screen_load()
 {
 	// TODO delete
 	struct_record_object *ro = &global_record_object;
-	ro->record_album_index = 0;
+	ro->record_album_index = 11;
 
 	//engine_font_manager_draw_text( "TEST SCREEN...", 10, 5 );
 	
@@ -25,7 +26,7 @@ void screen_test_screen_load()
 	engine_riff_manager_init();
 
 	load_record();
-	//engine_riff_manager_play( 0 );
+	engine_riff_manager_play( ro->record_album_index );
 }
 
 void screen_test_screen_update( unsigned char *screen_type )
@@ -36,7 +37,6 @@ void screen_test_screen_update( unsigned char *screen_type )
 	
 	input1 = engine_input_manager_hold( input_type_fire1 );
 	//input2 = engine_input_manager_hold( input_type_fire2 );
-	
 	if( input1 )
 	{
 		//engine_font_manager_draw_text( "SAMPLE 0", 10, 10 );
