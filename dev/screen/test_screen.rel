@@ -1,6 +1,6 @@
 ;!FILE test_screen.asm
 XL2
-H 9 areas 3E global symbols
+H 9 areas 40 global symbols
 M test_screen
 O -mz80
 S _global_record_object Ref0000
@@ -12,59 +12,61 @@ S _devkit_SMS_displayOff Ref0000
 S _engine_asm_manager_clear_VRAM Ref0000
 S _engine_riff_manager_play Ref0000
 S _engine_record_manager_load Ref0000
-A _CODE size 31 flags 0 addr 0
-S A$test_screen$116 Def001F
-S A$test_screen$107 Def0018
-S C$test_screen.c$52$1$32 Def0025
+A _CODE size 34 flags 0 addr 0
+S C$test_screen.c$52$1$32 Def0028
 S C$test_screen.c$27$1$30 Def0008
-S A$test_screen$153 Def002E
-S A$test_screen$117 Def0020
-S A$test_screen$108 Def0019
 S C$test_screen.c$19$1$30 Def0000
 S A$test_screen$145 Def002B
-S A$test_screen$118 Def0021
-S A$test_screen$109 Def001A
+S A$test_screen$109 Def0017
 S C$test_screen.c$43$2$33 Def0017
 S C$test_screen.c$29$1$30 Def0008
-S A$test_screen$137 Def0025
-S A$test_screen$119 Def0022
+S A$test_screen$128 Def0027
+S A$test_screen$119 Def0021
 S C$test_screen.c$37$1$32 Def000B
-S C$test_screen.c$54$1$34 Def0025
-S C$test_screen.c$55$1$34 Def0028
-S C$test_screen.c$56$1$34 Def002B
-S C$test_screen.c$49$1$32 Def001E
-S XFtest_screen$load_record$0$0 Def002E
-S C$test_screen.c$57$1$34 Def002E
-S C$test_screen.c$58$1$34 Def002E
+S C$test_screen.c$54$1$34 Def0028
+S A$test_screen$157 Def0031
+S C$test_screen.c$55$1$34 Def002B
+S A$test_screen$149 Def002E
+S C$test_screen.c$56$1$34 Def002E
+S C$test_screen.c$49$1$32 Def0021
+S XFtest_screen$load_record$0$0 Def0031
+S C$test_screen.c$57$1$34 Def0031
+S C$test_screen.c$58$1$34 Def0031
 S C$test_screen.c$16$0$0 Def0000
-S XG$screen_test_screen_update$0$0 Def0024
+S XG$screen_test_screen_update$0$0 Def0027
 S A$test_screen$71 Def0005
 S G$screen_test_screen_load$0$0 Def0000
-S A$test_screen$92 Def000B
-S A$test_screen$93 Def000D
 S A$test_screen$66 Def0000
-S A$test_screen$94 Def000E
 S A$test_screen$67 Def0003
-S A$test_screen$95 Def000F
-S A$test_screen$96 Def0012
+S A$test_screen$95 Def000B
+S A$test_screen$96 Def000D
+S A$test_screen$97 Def000E
 S A$test_screen$79 Def0008
+S A$test_screen$98 Def000F
+S A$test_screen$99 Def0012
 S _screen_test_screen_load Def0000
 S XG$screen_test_screen_load$0$0 Def0008
-S Ftest_screen$load_record$0$0 Def0025
+S Ftest_screen$load_record$0$0 Def0028
 S G$screen_test_screen_update$0$0 Def000B
-S A$test_screen$100 Def0013
 S C$test_screen.c$20$1$30 Def0000
-S A$test_screen$110 Def001D
-S A$test_screen$101 Def0014
-S A$test_screen$102 Def0015
+S A$test_screen$110 Def001A
+S A$test_screen$120 Def0022
+S A$test_screen$111 Def001B
 S C$test_screen.c$31$1$30 Def000B
+S A$test_screen$121 Def0023
+S A$test_screen$112 Def001C
+S A$test_screen$103 Def0013
+S A$test_screen$122 Def0024
+S A$test_screen$113 Def001D
+S A$test_screen$104 Def0014
 S C$test_screen.c$40$1$32 Def0013
 S A$test_screen$141 Def0028
-S C$test_screen.c$50$1$32 Def0024
+S A$test_screen$123 Def0025
+S A$test_screen$114 Def0020
+S A$test_screen$105 Def0015
+S C$test_screen.c$50$1$32 Def0027
 S C$test_screen.c$25$1$30 Def0005
-S A$test_screen$124 Def0024
-S A$test_screen$115 Def001E
-S A$test_screen$106 Def0017
+S C$test_screen.c$33$1$32 Def000B
 S _screen_test_screen_update Def000B
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
@@ -76,21 +78,21 @@ A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
-T 00 00 21 00 00 36 00 CD 00 00 C3 25 00
+T 00 00 21 00 00 36 00 CD 00 00 C3 28 00
 R 00 00 00 00 02 03 00 00 02 08 04 00 00 0B 00 00
 T 0B 00
 R 00 00 00 00
-T 0B 00 3E 10 F5 33 CD 00 00 33 7D B7 28 07 AF F5
+T 0B 00 3E 10 F5 33 CD 00 00 33 7D B7 28 0A 21
 R 00 00 00 00 02 07 03 00
-T 19 00 33 CD 00 00 33
-R 00 00 00 00 02 04 07 00
-T 1E 00
+T 18 00 00 00 46 C5 33 CD 00 00 33
+R 00 00 00 00 02 02 00 00 02 08 07 00
+T 21 00
 R 00 00 00 00
-T 1E 00 C1 E1 E5 C5 36 06 C9
+T 21 00 C1 E1 E5 C5 36 06 C9
 R 00 00 00 00
-T 25 00
+T 28 00
 R 00 00 00 00
-T 25 00 CD 00 00 CD 00 00 CD 00 00 C3
+T 28 00 CD 00 00 CD 00 00 CD 00 00 C3
 R 00 00 00 00 02 03 05 00 02 06 06 00 02 09 08 00
-T 2F 00 00 00
+T 32 00 00 00
 R 00 00 00 00 02 02 01 00
