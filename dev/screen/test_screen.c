@@ -6,7 +6,7 @@
 
 void screen_test_screen_load()
 {
-	engine_font_manager_draw_text( "TEST SCREEN 288", 10, 5 );
+	engine_font_manager_draw_text( "TEST SCREEN 01", 10, 5 );
 	engine_riff_manager_init();
 }
 
@@ -20,11 +20,11 @@ void screen_test_screen_update( unsigned char *screen_type )
 
 	if( input1 )
 	{
-		engine_font_manager_draw_text( "SAMPLE 0", 10, 10 );
-		engine_riff_manager_play( 0 );
+		//engine_font_manager_draw_text( "SAMPLE 0", 10, 10 );
+		//engine_riff_manager_play( 0 );
 
-		//engine_font_manager_draw_text( "SAMPLE 1", 10, 11 );
-		//engine_riff_manager_play( 1 );
+		engine_font_manager_draw_text( "SAMPLE 1", 10, 11 );
+		engine_riff_manager_play( 1 );
 	}
 
 	*screen_type = screen_type_test;
