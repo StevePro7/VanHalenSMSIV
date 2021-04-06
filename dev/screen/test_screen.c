@@ -3,6 +3,7 @@
 #include "..\engine\cursor_manager.h"
 #include "..\engine\enum_manager.h"
 #include "..\engine\font_manager.h"
+#include "..\engine\hack_manager.h"
 #include "..\engine\input_manager.h"
 #include "..\engine\record_manager.h"
 #include "..\engine\riff_manager.h"
@@ -18,15 +19,18 @@ void screen_test_screen_load()
 {
 	// TODO delete
 	struct_record_object *ro = &global_record_object;
+	struct_hack_object *ho = &global_hack_object;
+
 	ro->record_album_index = 11;
 
 	//engine_font_manager_draw_text( "TEST SCREEN...", 10, 5 );
+	engine_font_manager_draw_data( ho->hack_object_sound_play, 10, 5 );
 	
 	// TODO initialize at begin.
 	engine_riff_manager_init();
 
-	load_record();
-	engine_riff_manager_play( ro->record_album_index );
+	//load_record();
+	//engine_riff_manager_play( ro->record_album_index );
 }
 
 void screen_test_screen_update( unsigned char *screen_type )

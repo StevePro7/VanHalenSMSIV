@@ -212,6 +212,7 @@
     <ClCompile Include="engine\audio_manager.c" />
     <ClCompile Include="engine\content_manager.c" />
     <ClCompile Include="engine\cursor_manager.c" />
+    <ClCompile Include="engine\hack_manager.c" />
     <ClCompile Include="engine\riff_manager.c" />
     <ClCompile Include="engine\sample_manager.c" />
     <ClCompile Include="engine\scroll_manager.c" />
@@ -228,6 +229,7 @@
     <ClCompile Include="gfx.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="object\cursor_object.c" />
+    <ClCompile Include="object\hack_object.c" />
     <ClCompile Include="object\record_object.c" />
     <ClCompile Include="object\riff_object.c" />
     <ClCompile Include="object\scroll_object.c" />
@@ -311,6 +313,7 @@
     <ClInclude Include="engine\audio_manager.h" />
     <ClInclude Include="engine\content_manager.h" />
     <ClInclude Include="engine\cursor_manager.h" />
+    <ClInclude Include="engine\hack_manager.h" />
     <ClInclude Include="engine\riff_manager.h" />
     <ClInclude Include="engine\sample_manager.h" />
     <ClInclude Include="engine\scroll_manager.h" />
@@ -327,6 +330,7 @@
     <ClInclude Include="gfx.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="object\cursor_object.h" />
+    <ClInclude Include="object\hack_object.h" />
     <ClInclude Include="object\record_object.h" />
     <ClInclude Include="object\riff_object.h" />
     <ClInclude Include="object\scroll_object.h" />

@@ -342,6 +342,12 @@
     <ClCompile Include="banks\bank62.c">
       <Filter>Source Files\banks</Filter>
     </ClCompile>
+    <ClCompile Include="engine\hack_manager.c">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="object\hack_object.c">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -634,6 +640,12 @@
     </ClInclude>
     <ClInclude Include="banks\bank63.h">
       <Filter>Header Files\banks</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\hack_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="object\hack_object.h">
+      <Filter>Header Files\object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

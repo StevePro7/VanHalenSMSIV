@@ -26,12 +26,13 @@ cd engine
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 enum_manager.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 font_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 global_manager.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 hack_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 locale_manager.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 input_manager.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 record_manager.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 record_manager.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 riff_manager.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 sample_manager.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 screen_manager.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 screen_manager.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 scroll_manager.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 storage_manager.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 timer_manager.c
@@ -39,7 +40,8 @@ cd ..
 
 cd object
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 cursor_object.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 record_object.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 hack_object.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 record_object.c
 sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 riff_object.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 scroll_object.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 storage_object.c
@@ -106,8 +108,8 @@ devkit\_sms_manager.rel ^
 devkit\_snd_manager.rel ^
 engine\asm_manager.rel engine\audio_manager.rel ^
 engine\content_manager.rel engine\cursor_manager.rel ^
-engine\enum_manager.rel engine\font_manager.rel engine\input_manager.rel engine\locale_manager.rel engine\record_manager.rel ^
-engine\riff_manager.rel engine\sample_manager.rel ^
+engine\enum_manager.rel engine\font_manager.rel engine\hack_manager.rel engine\input_manager.rel engine\locale_manager.rel ^
+engine\record_manager.rel engine\riff_manager.rel engine\sample_manager.rel ^
 engine\screen_manager.rel engine\scroll_manager.rel engine\storage_manager.rel engine\timer_manager.rel ^
 object\cursor_object.rel object\record_object.rel object\riff_object.rel ^
 object\scroll_object.rel object\storage_object.rel object\timer_object.rel ^

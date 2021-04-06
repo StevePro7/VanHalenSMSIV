@@ -16,11 +16,12 @@ void main(void)
 
 	engine_content_manager_load_tiles();
 	engine_content_manager_load_sprites();
+	engine_hack_manager_init();
 	engine_riff_manager_init();
 
 	//open_screen_type = screen_type_splash;
-	//open_screen_type = screen_type_test;
-	open_screen_type = screen_type_record;
+	open_screen_type = screen_type_test;
+	//open_screen_type = screen_type_record;
 
 	engine_scroll_manager_reset();
 	engine_screen_manager_init( open_screen_type );
