@@ -3,6 +3,7 @@
 #include "..\engine\cursor_manager.h"
 #include "..\engine\enum_manager.h"
 #include "..\engine\font_manager.h"
+#include "..\engine\hack_manager.h"
 #include "..\engine\input_manager.h"
 #include "..\engine\record_manager.h"
 #include "..\engine\riff_manager.h"
@@ -63,13 +64,17 @@ void screen_record_screen_update( unsigned char *screen_type )
 
 static void load_record()
 {
+	struct_hack_object *ho = &global_hack_object;
+
 	devkit_SMS_displayOff();
 	engine_asm_manager_clear_VRAM();
 	engine_record_manager_load();
 	devkit_SMS_displayOn();
 
-	// TODO wrap hack_manager
-	//play_riff();
+	if( ho->hack_object_sound_play )
+	{
+		play_riff();
+	}
 }
 
 static void play_riff()

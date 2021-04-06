@@ -1,6 +1,6 @@
 ;!FILE record_screen.asm
 XL2
-H 9 areas 92 global symbols
+H 9 areas 9A global symbols
 M record_screen
 O -mz80
 S _engine_record_manager_init Ref0000
@@ -8,6 +8,7 @@ S _engine_record_manager_decrement Ref0000
 S _global_record_object Ref0000
 S _devkit_SMS_displayOn Ref0000
 S _engine_record_manager_increment Ref0000
+S _global_hack_object Ref0000
 S .__.ABS. Def0000
 S _engine_cursor_manager_init Ref0000
 S _engine_input_manager_hold Ref0000
@@ -18,86 +19,93 @@ S _engine_record_manager_load Ref0000
 S _engine_storage_manager_write Ref0000
 S _devkit_SMS_setBGScrollY Ref0000
 S _engine_scroll_manager_reset Ref0000
-A _CODE size 8C flags 0 addr 0
+A _CODE size 94 flags 0 addr 0
+S A$record_screen$270 Def0086
+S A$record_screen$261 Def0084
+S A$record_screen$252 Def007B
 S A$record_screen$207 Def0069
 S A$record_screen$180 Def004A
 S A$record_screen$162 Def0040
 S A$record_screen$153 Def0036
 S A$record_screen$126 Def0022
 S A$record_screen$117 Def001A
-S C$record_screen.c$62$1$32 Def0074
-S C$record_screen.c$35$1$32 Def0018
-S C$record_screen.c$33$2$33 Def0015
-S C$record_screen.c$19$1$30 Def0000
+S C$record_screen.c$62$1$32 Def0071
+S C$record_screen.c$44$1$32 Def0032
+S C$record_screen.c$33$2$33 Def0012
+S C$record_screen.c$26$1$32 Def0006
+S A$record_screen$262 Def0085
+S A$record_screen$244 Def0075
 S A$record_screen$217 Def0070
 S A$record_screen$208 Def006C
 S A$record_screen$190 Def0055
 S A$record_screen$181 Def004B
 S A$record_screen$118 Def001B
-S C$record_screen.c$36$1$32 Def0020
-S A$record_screen$245 Def0078
+S C$record_screen.c$63$1$32 Def0074
+S C$record_screen.c$36$1$32 Def0018
+S C$record_screen.c$34$2$33 Def0015
+S A$record_screen$290 Def008F
 S A$record_screen$191 Def0056
 S A$record_screen$182 Def004C
 S A$record_screen$173 Def0045
 S A$record_screen$119 Def001C
-S C$record_screen.c$64$1$32 Def0075
-S A$record_screen$273 Def0081
+S C$record_screen.c$37$1$32 Def0020
+S A$record_screen$291 Def0092
 S A$record_screen$228 Def0074
 S A$record_screen$192 Def0057
 S A$record_screen$183 Def004D
 S A$record_screen$174 Def0046
 S A$record_screen$147 Def0032
-S C$record_screen.c$51$2$36 Def0049
-S C$record_screen.c$29$1$32 Def0006
-S A$record_screen$283 Def008B
-S A$record_screen$274 Def0084
+S C$record_screen.c$65$1$32 Def0075
+S A$record_screen$256 Def007E
 S A$record_screen$193 Def0058
 S A$record_screen$184 Def0050
 S A$record_screen$175 Def0047
 S A$record_screen$166 Def0041
 S A$record_screen$148 Def0033
 S A$record_screen$139 Def002A
-S XFrecord_screen$play_riff$0$0 Def008B
-S C$record_screen.c$57$1$32 Def0041
-S C$record_screen.c$48$1$32 Def0039
-S A$record_screen$275 Def0085
-S A$record_screen$257 Def007E
+S XFrecord_screen$play_riff$0$0 Def0093
+S C$record_screen.c$70$1$37 Def0078
+S C$record_screen.c$52$2$36 Def0049
+S A$record_screen$248 Def0078
 S A$record_screen$194 Def0059
 S A$record_screen$185 Def0051
 S A$record_screen$167 Def0042
 S A$record_screen$158 Def0039
 S A$record_screen$149 Def0034
-S C$record_screen.c$53$2$36 Def0052
-S C$record_screen.c$49$1$32 Def0045
-S C$record_screen.c$45$2$35 Def0036
-S A$record_screen$276 Def0086
-S A$record_screen$249 Def007B
+S C$record_screen.c$80$1$37 Def0089
+S C$record_screen.c$71$1$37 Def007B
+S C$record_screen.c$58$1$32 Def0041
+S C$record_screen.c$49$1$32 Def0039
 S A$record_screen$195 Def005C
 S A$record_screen$168 Def0043
 S A$record_screen$159 Def003B
-S XFrecord_screen$load_record$0$0 Def007E
-S C$record_screen.c$54$2$36 Def005E
-S C$record_screen.c$38$2$34 Def0024
-S A$record_screen$277 Def0087
+S XFrecord_screen$load_record$0$0 Def0086
+S C$record_screen.c$72$1$37 Def007E
+S C$record_screen.c$54$2$36 Def0052
+S C$record_screen.c$46$2$35 Def0036
+S A$record_screen$286 Def0089
 S A$record_screen$196 Def005D
 S A$record_screen$169 Def0044
-S C$record_screen.c$73$1$37 Def007E
-S C$record_screen.c$39$2$34 Def0027
-S A$record_screen$278 Def008A
+S C$record_screen.c$55$2$36 Def005E
+S C$record_screen.c$39$2$34 Def0024
+S A$record_screen$296 Def0093
+S A$record_screen$287 Def008C
 S A$record_screen$179 Def0049
+S C$record_screen.c$74$1$37 Def0081
+S A$record_screen$288 Def008D
 S A$record_screen$189 Def0052
-S C$record_screen.c$75$1$37 Def0081
-S C$record_screen.c$66$1$37 Def0075
-S C$record_screen.c$57$2$36 Def006D
-S C$record_screen.c$67$1$37 Def0078
+S C$record_screen.c$82$1$39 Def0089
+S A$record_screen$289 Def008E
+S C$record_screen.c$83$1$39 Def0089
+S C$record_screen.c$67$1$37 Def0075
 S XG$screen_record_screen_update$0$0 Def0074
-S C$record_screen.c$58$2$36 Def0070
-S C$record_screen.c$17$0$0 Def0000
-S C$record_screen.c$68$1$37 Def007B
-S C$record_screen.c$77$1$38 Def0081
-S C$record_screen.c$69$1$37 Def007E
-S C$record_screen.c$78$1$38 Def0081
-S C$record_screen.c$79$1$38 Def008B
+S C$record_screen.c$58$2$36 Def006D
+S C$record_screen.c$84$1$39 Def0093
+S C$record_screen.c$59$2$36 Def0070
+S C$record_screen.c$18$0$0 Def0000
+S C$record_screen.c$78$1$37 Def0086
+S C$record_screen.c$76$2$38 Def0086
+S C$record_screen.c$69$1$37 Def0075
 S G$screen_record_screen_load$0$0 Def0000
 S A$record_screen$93 Def0006
 S A$record_screen$94 Def0008
@@ -108,10 +116,10 @@ S A$record_screen$69 Def0000
 S A$record_screen$97 Def000D
 S _screen_record_screen_load Def0000
 S XG$screen_record_screen_load$0$0 Def0003
-S Frecord_screen$play_riff$0$0 Def0081
+S Frecord_screen$play_riff$0$0 Def0089
 S Frecord_screen$load_record$0$0 Def0075
 S G$screen_record_screen_update$0$0 Def0006
-S C$record_screen.c$20$1$30 Def0003
+S C$record_screen.c$20$1$30 Def0000
 S A$record_screen$200 Def005E
 S A$record_screen$101 Def000E
 S C$record_screen.c$21$1$30 Def0003
@@ -119,26 +127,28 @@ S A$record_screen$201 Def0061
 S A$record_screen$120 Def001F
 S A$record_screen$111 Def0015
 S A$record_screen$102 Def000F
+S C$record_screen.c$22$1$30 Def0003
 S A$record_screen$202 Def0062
 S A$record_screen$130 Def0024
 S A$record_screen$103 Def0010
-S C$record_screen.c$30$1$32 Def000E
-S C$record_screen.c$23$1$30 Def0006
+S C$record_screen.c$30$1$32 Def0006
 S A$record_screen$212 Def006D
 S A$record_screen$203 Def0063
 S A$record_screen$140 Def002C
+S C$record_screen.c$31$1$32 Def000E
+S C$record_screen.c$24$1$30 Def0006
 S A$record_screen$222 Def0071
 S A$record_screen$213 Def006F
 S A$record_screen$204 Def0064
 S A$record_screen$141 Def002D
-S A$record_screen$241 Def0075
+S C$record_screen.c$50$1$32 Def0045
 S A$record_screen$223 Def0073
 S A$record_screen$205 Def0065
 S A$record_screen$160 Def003C
 S A$record_screen$142 Def002E
 S A$record_screen$124 Def0020
-S C$record_screen.c$42$1$32 Def002A
 S _screen_record_screen_update Def0006
+S A$record_screen$260 Def0081
 S A$record_screen$206 Def0068
 S A$record_screen$161 Def003D
 S A$record_screen$143 Def0031
@@ -146,10 +156,8 @@ S A$record_screen$134 Def0027
 S A$record_screen$125 Def0021
 S A$record_screen$116 Def0018
 S A$record_screen$107 Def0012
-S C$record_screen.c$61$1$32 Def0071
-S C$record_screen.c$43$1$32 Def0032
-S C$record_screen.c$32$2$33 Def0012
-S C$record_screen.c$25$1$32 Def0006
+S C$record_screen.c$43$1$32 Def002A
+S C$record_screen.c$40$2$34 Def0027
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -161,46 +169,46 @@ A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
 T 00 00 CD 00 00 C3 75 00
-R 00 00 00 00 02 03 0E 00 00 06 00 00
+R 00 00 00 00 02 03 0F 00 00 06 00 00
 T 06 00
 R 00 00 00 00
 T 06 00 3E 04 F5 33 CD 00 00 33 7D B7 28 06 CD
-R 00 00 00 00 02 07 07 00
+R 00 00 00 00 02 07 08 00
 T 13 00 00 00 CD 75 00
 R 00 00 00 00 02 02 01 00 00 05 00 00
 T 18 00
 R 00 00 00 00
 T 18 00 3E 08 F5 33 CD 00 00 33 7D B7 28 06 CD
-R 00 00 00 00 02 07 07 00
+R 00 00 00 00 02 07 08 00
 T 25 00 00 00 CD 75 00
 R 00 00 00 00 02 02 04 00 00 05 00 00
 T 2A 00
 R 00 00 00 00
 T 2A 00 3E 10 F5 33 CD 00 00 33 7D B7 28 03 CD
-R 00 00 00 00 02 07 07 00
-T 37 00 81 00
+R 00 00 00 00 02 07 08 00
+T 37 00 89 00
 R 00 00 00 00 00 02 00 00
 T 39 00
 R 00 00 00 00
 T 39 00 3E 20 F5 33 CD 00 00 33 D1 C1 C5 D5 7D B7
-R 00 00 00 00 02 07 07 00
+R 00 00 00 00 02 07 08 00
 T 47 00 28 28 C5 AF F5 33 CD 00 00 33 C1 21 00 00
-R 00 00 00 00 02 09 0D 00 02 0E 02 00
+R 00 00 00 00 02 09 0E 00 02 0E 02 00
 T 55 00 56 C5 D5 33 CD 00 00 33 C1 21 00 00 56 C5
 R 00 00 00 00 02 07 00 00 02 0C 02 00
 T 63 00 D5 33 CD 00 00 33 CD 00 00 C1 3E 04 02 C9
-R 00 00 00 00 02 05 06 00 02 09 0C 00
+R 00 00 00 00 02 05 07 00 02 09 0D 00
 T 71 00
 R 00 00 00 00
 T 71 00 3E 05 02 C9
 R 00 00 00 00
 T 75 00
 R 00 00 00 00
-T 75 00 CD 00 00 CD 00 00 CD 00 00 C3
-R 00 00 00 00 02 03 08 00 02 06 09 00 02 09 0B 00
-T 7F 00 00 00
-R 00 00 00 00 02 02 03 00
-T 81 00
+T 75 00 CD 00 00 CD 00 00 CD 00 00 CD
+R 00 00 00 00 02 03 09 00 02 06 0A 00 02 09 0C 00
+T 7F 00 00 00 3A 00 00 B7 C8 C3 89 00
+R 00 00 00 00 02 02 03 00 02 05 05 00 00 0A 00 00
+T 89 00
 R 00 00 00 00
-T 81 00 21 00 00 46 C5 33 CD 00 00 33 C9
-R 00 00 00 00 02 03 02 00 02 09 0A 00
+T 89 00 21 00 00 46 C5 33 CD 00 00 33 C9
+R 00 00 00 00 02 03 02 00 02 09 0B 00

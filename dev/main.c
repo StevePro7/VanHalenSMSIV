@@ -20,12 +20,9 @@ void main(void)
 	engine_hack_manager_init();
 	engine_hack_manager_load();
 	engine_hack_manager_invert();
-
-	//open_screen_type = screen_type_splash;
-	open_screen_type = screen_type_test;
-	//open_screen_type = screen_type_record;
-
 	engine_scroll_manager_reset();
+
+	open_screen_type = screen_type_splash;
 	engine_screen_manager_init( open_screen_type );
 	devkit_SMS_displayOn();
 	for (;;)
