@@ -16,8 +16,10 @@ void main(void)
 
 	engine_content_manager_load_tiles();
 	engine_content_manager_load_sprites();
-	engine_hack_manager_init();
 	engine_riff_manager_init();
+	engine_hack_manager_init();
+	engine_hack_manager_load();
+	engine_hack_manager_invert();
 
 	//open_screen_type = screen_type_splash;
 	open_screen_type = screen_type_test;
