@@ -16,6 +16,7 @@ void main(void)
 
 	engine_content_manager_load_tiles();
 	engine_content_manager_load_sprites();
+	engine_riff_manager_init();
 
 	//open_screen_type = screen_type_splash;
 	//open_screen_type = screen_type_test;

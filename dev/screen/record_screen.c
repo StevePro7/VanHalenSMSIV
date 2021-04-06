@@ -5,6 +5,7 @@
 #include "..\engine\font_manager.h"
 #include "..\engine\input_manager.h"
 #include "..\engine\record_manager.h"
+#include "..\engine\riff_manager.h"
 #include "..\engine\storage_manager.h"
 #include "..\engine\scroll_manager.h"
 #include "..\engine\timer_manager.h"
@@ -56,8 +57,12 @@ void screen_record_screen_update( unsigned char *screen_type )
 
 static void load_record()
 {
+	struct_record_object *ro = &global_record_object;
+
 	devkit_SMS_displayOff();
 	engine_asm_manager_clear_VRAM();
 	engine_record_manager_load();
 	devkit_SMS_displayOn();
+
+	engine_riff_manager_play( ro->record_album_index );
 }
