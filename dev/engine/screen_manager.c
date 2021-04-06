@@ -37,6 +37,7 @@ void engine_screen_manager_init( unsigned char open_screen_type )
 	update_method[ screen_type_title ] = screen_title_screen_update;
 	update_method[ screen_type_scroll ] = screen_scroll_screen_update;
 	update_method[ screen_type_select ] = screen_select_screen_update;
+	update_method[ screen_type_record ] = screen_record_screen_update;
 	update_method[ screen_type_test ] = screen_test_screen_update;
 }
 

@@ -11,7 +11,6 @@
 #include "..\devkit\_sms_manager.h"
 
 static void load_record();
-static unsigned char event_stage;
 
 void screen_record_screen_load()
 {
